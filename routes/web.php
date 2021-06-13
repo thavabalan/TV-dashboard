@@ -15,8 +15,8 @@ use App\Http\Controllers\PageController;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
-})->middleware(['auth']);
+    return view('auth.login');
+});
 Route::get('/dashboard',[PageController::class, 'views'])->name('dashboard');
 Route::get('/live',[PageController::class, 'live'])->middleware(['auth'])->name('live');
 Route::get('/view',[PageController::class, 'viewdash'])->middleware(['auth'])->name('views');
