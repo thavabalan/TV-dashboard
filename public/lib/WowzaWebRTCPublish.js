@@ -17,7 +17,7 @@ let state = {
   isScreenSharing:false,
   constraints:{
     audio: true,
-    video:  { facingMode: "environment"}
+    video:  { facingMode: "user"}
   },
   sdpURL:'wss://rtmp.ttn.tv:442/webrtc-session.json',
   streamInfo:{
